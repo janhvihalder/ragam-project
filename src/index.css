@@ -1,3 +1,51 @@
 body{
     background-color: #0D1323;
+    font-family: Rubik;
+}
+/*changes to all jsx files can be made in the same css file */
+
+/* Parent containers */
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Card classes */
+.colored-part{
+    position: relative;
+
+    height: 12rem;
+    width: 12rem;
+
+    border-radius: 10px;
+
+    /* first 2 args are x and y axis, third is blur  */
+    box-shadow: 0 3px 7px rgba(0,0,0,0.6);
+    /* rgba- a is opacity of the color of shadow */
+
+    overflow: hidden;
+    /* any object within, overflowing from the div is hidden*/
+}
+
+.info-part{
+    position: absolute;
+    bottom: 0;
+
+    background-color: #1D204B;
+
+    height: 10rem;
+    width: 101.3%;
+
+    border-radius: 10px;
+
+    color: #fff;
+    font-weight: 300;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
