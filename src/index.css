@@ -13,6 +13,14 @@ body{
     gap: 20px;
 }
 
+
+.God{
+    display: flex;
+    width: 75%;
+    /* background-color: yellow; */
+    gap: 20px;
+}
+
 /* Card classes */
 .colored-part{
     position: relative;
@@ -23,11 +31,24 @@ body{
     border-radius: 10px;
 
     /* first 2 args are x and y axis, third is blur  */
-    box-shadow: 0 3px 7px rgba(0,0,0,0.6);
+    /* box-shadow: 0 3px 7px rgba(0,0,0,0.6); */
     /* rgba- a is opacity of the color of shadow */
 
     overflow: hidden;
     /* any object within, overflowing from the div is hidden*/
+}
+
+.profile{
+    height: 25.625rem;
+    width: 12rem;
+    border-radius: 10px;
+}
+
+.prev-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
 }
 
 .info-part{
@@ -42,10 +63,90 @@ body{
     border-radius: 10px;
 
     color: #fff;
-    font-weight: 300;
+    font-weight: 50;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 
 }
+
+.picture{
+    height: 16rem;
+    border-radius: 10px;
+    padding: 25px 30px 0px 30px;
+    font-weight: 50;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 17px;
+
+    /* Gap is space between each flex element. Not beyond the first or last element. */
+    gap: 0.8rem;
+
+}
+
+@media screen and (max-width: 768px) {
+    .colored-part{
+        /*fills the container (coincidently the device) to the max*/
+        flex-grow: 1;
+        width: 15rem;
+        height: 10rem;
+    }  
+    
+    .God{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profile{
+        height: 12rem;
+        flex-grow: 1;
+        width: 15rem;
+    }
+    
+    .prev-info{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .info-part{
+        height: 8rem
+    }
+
+    .picture{
+        height: 7rem;
+        flex-direction: row;
+    }
+
+    .buttons{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.states{
+    color:#8F87F9;
+    background: none;
+    border: none;
+    font-weight: 500;
+    transition: color 150ms ease, transform 0.3s ease;
+}
+
+.states:hover {
+    color: rgb(255, 255, 255); /* Change color on hover */
+    transform: scale(1.07); /* Slightly enlarge the button */
+    cursor: pointer;
+}
+
+.states:active{
+    transform: scale(0.98);
+}
+

@@ -3,6 +3,7 @@ import { IoEllipsisHorizontal } from "react-icons/io5";
 //put curly brackets for multiple arguments
 export default function Card({backgroundColor = "#FF8B64", topic="Work", icon="/icon-work.svg"}){
     return(
+        
 
         // Coloured Div
         <div style={{backgroundColor: backgroundColor}} className="colored-part">
@@ -21,15 +22,18 @@ export default function Card({backgroundColor = "#FF8B64", topic="Work", icon="/
                     {/* all  arguments used are enclosed in curly braces */}
                     <IoEllipsisHorizontal />
                 </div>
+                
+                {/* Div for previous information */}
+                <div className="prev-info">
+                    {/* Current Value */}
+                    <div style={{padding:"0px 17px", fontSize:"xxx-large"}}>
+                        32hrs
+                    </div>
 
-                {/* Current Value */}
-                <div style={{padding:"0px 17px", fontSize:"xxx-large"}}>
-                    32hrs
-                </div>
-
-                {/* Previous Value */}
-                <div style={{padding:"0px 17px 17px 17px", fontSize:"x-small", color:"#B7BBEC"}}>
-                    Last Week - 36hrs
+                    {/* Previous Value */}
+                    <div style={{padding:"0px 17px 17px 17px", fontSize:"x-small", color:"#B7BBEC"}}>
+                        Last Week - 36hrs
+                    </div>
                 </div>
             </div>
         </div>
