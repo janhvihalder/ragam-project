@@ -1,9 +1,10 @@
 import { IoEllipsisHorizontal } from "react-icons/io5";
 
 //put curly brackets for multiple arguments
-export default function Card({backgroundColor = "#FF8B64", topic="Work", icon="/icon-work.svg"}){
+export default function Card({backgroundColor = "#FF8B64", topic="Work", icon="/icon-work.svg", timeFrame, data}){
+    
+    
     return(
-        
 
         // Coloured Div
         <div style={{backgroundColor: backgroundColor}} className="colored-part">
@@ -27,12 +28,12 @@ export default function Card({backgroundColor = "#FF8B64", topic="Work", icon="/
                 <div className="prev-info">
                     {/* Current Value */}
                     <div style={{padding:"0px 17px", fontSize:"xxx-large"}}>
-                        32hrs
+                        {data.timeframes[timeFrame].current}hrs
                     </div>
 
                     {/* Previous Value */}
                     <div style={{padding:"0px 17px 17px 17px", fontSize:"x-small", color:"#B7BBEC"}}>
-                        Last Week - 36hrs
+                        {timeFrame==='daily'?"Yesterday": timeFrame==='weekly'?"Last Week" : "Last Month"} - {data.timeframes[timeFrame].previous}hrs
                     </div>
                 </div>
             </div>

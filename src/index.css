@@ -16,7 +16,7 @@ body{
 
 .God{
     display: flex;
-    width: 75%;
+    width: 60%;
     /* background-color: yellow; */
     gap: 20px;
 }
@@ -138,6 +138,12 @@ body{
     border: none;
     font-weight: 500;
     transition: color 150ms ease, transform 0.3s ease;
+}
+
+.active-states{
+    color: rgb(255, 255, 255); /* Change color on hover */
+    transform: scale(1.07); /* Slightly enlarge the button */
+    cursor: pointer;
 }
 
 .states:hover {
