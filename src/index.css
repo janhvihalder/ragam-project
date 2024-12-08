@@ -15,6 +15,7 @@ body{
 
 
 .God{
+    margin-top: 2rem;
     display: flex;
     width: 60%;
     /* background-color: yellow; */
