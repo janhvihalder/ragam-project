@@ -132,6 +132,12 @@ body{
     }
 }
 
+@media screen and (max-width: 1280px) {
+    .God{
+        width: 85%;
+    }
+}
+
 .states{
     color:#8F87F9;
     background: none;

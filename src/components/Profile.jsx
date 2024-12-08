@@ -30,9 +30,9 @@ function Profile({setTimeFrame, timeFrame}){
 
             {/* Toggles */}
             <div className="buttons">
-                <div><button onClick={()=>{setTimeFrame('daily')}} className={`states ${timeFrame=='daily'&&" active-states "}`} >Daily</button></div>
-                <div><button onClick={()=>{setTimeFrame('weekly')}} className={`states ${timeFrame=='weekly'&&" active-states "}`} >Weekly</button></div>
-                <div><button onClick={()=>{setTimeFrame('monthly')}} className={`states ${timeFrame=='monthly'&&" active-states "}`} >Monthly</button></div>
+                <div><button onClick={()=>{setTimeFrame('daily')}} className={`states ${timeFrame==='daily'&&" active-states "}`} >Daily</button></div>
+                <div><button onClick={()=>{setTimeFrame('weekly')}} className={`states ${timeFrame==='weekly'&&" active-states "}`} >Weekly</button></div>
+                <div><button onClick={()=>{setTimeFrame('monthly')}} className={`states ${timeFrame==='monthly'&&" active-states "}`} >Monthly</button></div>
             </div>
         </div>
     )
